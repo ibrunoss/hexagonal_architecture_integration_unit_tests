@@ -5,7 +5,7 @@ export default class PgPromiseAdapter implements Connection {
 	connection: any;
 
 	constructor () {
-		this.connection = pgp()("postgres://postgres:123546@localhost:5432/app");
+		this.connection = pgp()("postgres://postgres@localhost:5432/estudo");
 	}
 
 	query(statement: string, params: any): Promise<any> {
